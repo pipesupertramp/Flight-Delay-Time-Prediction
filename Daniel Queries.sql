@@ -9,11 +9,19 @@
 
 -- select * from flights order by random() limit 50000;
 
--- select * from flights_test order by random() limit 50000;
+-- AIRPORTS
 
+-- Top 10 airports
 -- SELECT origin, count(origin) FROM passengers
---    WHERE origin = 'ORD' or origin = 'ATL' or origin = 'DFW'or origin = 'DEN' or origin = 'CLT'
+--    WHERE origin = 'ORD' or origin = 'ATL' or origin = 'DFW' or origin = 'DEN' or origin = 'CLT'
 --    or origin = 'LAX' or origin = 'SEA' or origin = 'DTW'or origin = 'IAH'or origin = 'PHX'
 --    GROUP BY origin;
 
-SELECT origin, count(origin) FROM passengers GROUP BY origin ORDER BY count(origin) DESC;
+-- Volumes per AIRPORT
+-- SELECT origin, count(origin) FROM passengers GROUP BY origin ORDER BY count(origin) DESC;
+
+-- TESTING DATA
+
+-- select * from flights_test order by random() limit 50000;
+
+select * from flights_test order by random() limit 10;
